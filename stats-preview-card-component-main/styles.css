@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #0A0C1C;
+    font-weight: 700;
+}
+
+main{
+    width: 1110px;
+    height: 446px;
+    z-index: 1;
+    display: flex;
+    margin: 1rem;
+    background-color: #1B1937;
+    border-radius: 8px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    padding: 72px 71px 95px 59px;
+    width: 570px;
+    min-width: 300px;
+    background-color: #1B1937;
+    border-radius: 10px;
+}
+
+section h1 {
+    color: chartreuse;
+    font-size: 2.25rem;
+    margin-bottom: 0.75em;
+}
+
+section h1 span {
+    color: burlywood;
+}
+
+section .content {
+    margin-right: 2rem;
+}
+
+section .lead {
+    color: cadetblue;
+    line-height: 1.5em;
+    margin-bottom: 5em;
+}
+
+section ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    letter-spacing: 1px;
+}
+
+section ul h2 {
+    color: cornflowerblue;
+    margin-bottom: 0.3em;
+}
+
+section ul p {
+    font-family: "Lexend Deca", sans-serif;
+    color: darkorange;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+
+img {
+    width: 540px;
+    height: 446px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+}
+
+/* footer */
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    font-size: 0.75rem;
+    line-height: 20px;
+    text-align: center;
+    color: coral;
+    margin-bottom: 10px;
+}
+
+.atribution a {
+    text-decoration: none;
+    color: #dddd;
+    font-weight: bold;
+}
+
+.attribution a:hover {
+    color: #aaaa;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 1024px){
+    :root {
+        font-size: 12px;
+    }
+    
+    section {
+        padding: 31px 40px 31.5px 32px;
+    }
+}
+
+@media only screen and (max-width: 625px) {
+    body {
+        flex-direction: column;
+    }
+
+    main {
+        flex-direction: column-reverse;
+        margin: 10px;
+        width: 375px;
+        height: 956px;
+        margin-top: 5em;
+        padding: 24px 88px 24px 88px;
+    }
+
+    section {
+        padding: 0;
+        padding: 3em;
+        width: 300px;
+        border-radius: 0 0 10px 10px;
+    }
+
+    section h1,
+    section .lead {
+    text-align: center;
+    }
+
+    section .lead {
+        font-size: 1.1rem;
+        margin-bottom: 2em
+    }
+
+    section .content {
+        margin-right: 0;
+    }
+
+    section ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section ul li {
+        margin-bottom: 2em;
+    }
+
+    section ul h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 0.25em;
+    }
+
+    section ul p {
+        font-size: 1.05rem
+    }
+
+    img {
+        width: 327px;
+        height: 240px;
+    }
+}
+
